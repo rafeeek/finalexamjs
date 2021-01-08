@@ -73,7 +73,7 @@ input:focus{
     .after{
       bottom:  calc(100% - 200px);
     }
-    .book{right: 0;}
+    .book{right: -13;}
 }
 
 
