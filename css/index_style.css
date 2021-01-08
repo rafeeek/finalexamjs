@@ -1,0 +1,66 @@
+body {font-family: 'Josefin Sans', sans-serif;color: #000000;background-image: URL("../img/dark_dot.jpg");}
+.contain{background-color: #2C2C2C;position: fixed;width: 301px;height: 100vh;left: -234.5px;z-index: 55;}
+.divicon{justify-content: space-between;flex-direction: column;}
+.lasticon{position: relative;top: 100;}
+.centericon{position: relative;top:30;}
+.navmenu {background-image: linear-gradient(to right bottom ,#49B1CF , #522FB5);}
+.contacticon{font-size: 1.2rem;position: absolute;bottom: 5%;}
+.contacticon i:hover {cursor: pointer;color: #C73853;}
+.first{position: relative;top: 290;}
+.category{display: flex;flex-direction: column;overflow: hidden;}
+.category p {cursor: pointer;}
+.category a {text-decoration: none;color:#F8F9FA;}
+.lasticon i{cursor: pointer;}
+.dispaly_contain{position: relative;overflow: hidden;}
+.detials{background-color: #43B4D9;width: 100%;height: 100%;position: absolute;top: 100%;opacity: 0.7;transition: all 1s;}
+.dispaly_contain:hover .detials{top: 0;}
+.dispaly_contain:hover .textditails {top: 0;}
+.divtoinmate{cursor: pointer; color: #ffffff; background-color: #615ED2;position:fixed;z-index:9;bottom:calc(100% - 70px);left: 0px;width: 50.5562;transition: all 0.7s;}
+.divtoinmate:hover{background-color: #615ED2;color: ffffff;}
+.textditails{width: 100%;height: 100%;position: absolute;top: 100%;transition: all 1s;display: flex; flex-direction: column; justify-content: center;align-items: center;}
+.floting{color: black; background-color: #7BE1F7;position:fixed;z-index:9;bottom:15px;left:calc(100% - 75px);width: 50px;border-radius: 50%;}
+.myinput{background-color: transparent;border: none; border-bottom: 3px solid #43B4D9;color: rgb(255, 255, 255);}
+::placeholder{color: rgb(255, 255, 255);}
+input:focus{
+    background-color: #43b4d931;
+    outline: none;
+}
+.hideee{display: none;}
+.mybtn{color:#ffffff;border: 1px solid #43B4D9;}
+.savebtn{font-size: 35px; color: rgb(255, 255, 255);position: absolute;top: 2%;left: 2%;cursor: pointer;}
+.savebtn:hover{color: #F6CC33;}
+.savebtnafter{font-size: 15px;color: #ffffff;}
+
+
+
+
+
+
+
+
+
+/* /bookmark */
+.book{
+    
+    width: 70%;height: 100vh;position: fixed;z-index: 555;right: 0;
+    background-image: linear-gradient(to left bottom ,#49B1CF , #522FB5);
+}
+.containss{position: absolute;overflow-y: scroll;z-index: 555;  height: 100%;}
+
+.after{
+    cursor: pointer;
+    background-color: #4E6EC2;
+    width: 60px;
+    height: 48px;
+    position: absolute;
+    left: -60px;
+    bottom:  calc(100% - 70px);
+    display: flex;
+    padding-left: 17px;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.9rem;
+    color: rgb(255, 255, 255);
+    transition: all 1s;
+}
+.after:hover{color: rgb(0, 0, 0);}
