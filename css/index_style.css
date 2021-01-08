@@ -69,11 +69,12 @@ input:focus{
 @media only screen and (max-width: 600px) {
     .refoo , .mediasm {
       margin-left: 40px;
+      margin-right: 10px;
     }
     .after{
       bottom:  calc(100% - 200px);
     }
-    .book{right: -13;}
+    .book{right: ;}
 }
 
 
