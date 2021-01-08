@@ -1,6 +1,10 @@
+new WOW().init();
 let navmenu = $(".navmenu").outerWidth();
 let cat = document.querySelectorAll(".category p")
-
+$(document).ready(()=>{
+    $(".shadow").addClass("hideee")
+    $("body").css("overflow","auto")
+})
 
 //---------------------------------------------------------------------nav
 $(".centericon").click(function() { 
@@ -76,7 +80,7 @@ function searchword(val){
         if(ee.original_title.includes(val.toUpperCase()))
         {return ee}})
     let lastsearch =search.map(function(arr) {
-    return `<div class="col-md-4 col-sm-6 mb-3">
+    return `<div class="col-md-4 col-sm-6 mb-3 wow bounceIn">
     <div  class="dispaly_contain">
     <img src="https://image.tmdb.org/t/p/w500/${arr.poster_path}" class="img-fluid rounded" alt="">
     <div class="detials rounded p-3"></div>
@@ -133,7 +137,7 @@ async function display_items(targetcat) {
     let array = await x.json()
     globalThis.arrayitems = array.results
     let datatodis = arrayitems.map(function(arr) {
-        return `<div class="col-md-4 col-sm-6 mb-3">
+        return `<div class="col-md-4 col-sm-6 mb-3 wow bounceIn">
         <div  class="dispaly_contain">
             <img src="https://image.tmdb.org/t/p/w500/${arr.poster_path}" class="img-fluid rounded" alt="">
             <div class="detials rounded p-3"></div>
