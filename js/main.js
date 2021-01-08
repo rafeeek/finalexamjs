@@ -87,7 +87,7 @@ function searchword(val){
             <div class="textditails text-center px-3">
             <div class="savebtn">
             <i data-id="${arr.id}" class="fas fa-star"></i></div>
-                <h2>${arr.original_title}</h2>
+                <h4>${arr.original_title}</h4>
                 <p style="font-size: 80%">${arr.overview}</p>
                 <h4 class="py-3">rate : ${arr.vote_average}</h4>
                 <h5>${arr.release_date}</h5>
@@ -144,7 +144,7 @@ async function display_items(targetcat) {
             <div class="textditails text-center px-3">
             <div class="savebtn">
             <i data-id="${arr.id}" class="fas fa-star"></i></div>
-                <h2>${arr.original_title}</h2>
+                <h4>${arr.original_title}</h4>
                 <p style="font-size: 80%">${arr.overview}</p>
                 <h4 class="py-3">rate : ${arr.vote_average}</h4>
                 <h5>${arr.release_date}</h5>
@@ -277,11 +277,11 @@ async function bookdisplay() {
         hasala +=`<div class="col-md-4 col-sm-6 mb-3">
         <div  class="dispaly_contain">
             <img src="https://image.tmdb.org/t/p/w500/${moviearray[t].poster_path}" class="img-fluid rounded" alt="">
-            <div class="detials rounded p-3"></div>
+            <div class="detials rounded p-1"></div>
             <div class="textditails text-center px-3">
-                <h2>${moviearray[t].original_title}</h2>
+                <h5>${moviearray[t].original_title}</h5>
                 <p style="font-size: 80%">${moviearray[t].overview}</p>
-                <h4 class="py-3">rate : ${moviearray[t].vote_average}</h4>
+                <h4 class="py-1">rate : ${moviearray[t].vote_average}</h4>
                 <h5>${moviearray[t].release_date}</h5>
             </div>
         </div>
