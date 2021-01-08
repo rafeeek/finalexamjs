@@ -1,9 +1,9 @@
 body {font-family: 'Josefin Sans', sans-serif;color: #000000;background-image: URL("../img/dark_dot.jpg");overflow: hidden;}
-/* .shadow{position: fixed;top: 0;bottom: 0;
+.shadow{position: fixed;top: 0;bottom: 0;
     background-color: #424242;height: 100vh;width: 100%;
     z-index: 5555;color: #43B4D9;
     display: flex;justify-content: center;align-items: center;
-} */
+}
 .contain{background-color: #2C2C2C;position: fixed;width: 301px;height: 100vh;left: -234.5px;z-index: 55;}
 .divicon{justify-content: space-between;flex-direction: column;}
 .lasticon{position: relative;top: 100;}
