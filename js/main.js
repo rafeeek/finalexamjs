@@ -137,7 +137,7 @@ async function display_items(targetcat) {
     let array = await x.json()
     globalThis.arrayitems = array.results
     let datatodis = arrayitems.map(function(arr) {
-        return `<div class="col-md-4 col-sm-6 mb-3 wow bounceIn">
+        return `<div class="col-md-4 col-sm-6 mb-5 wow bounceIn">
         <div  class="dispaly_contain">
             <img src="https://image.tmdb.org/t/p/w500/${arr.poster_path}" class="img-fluid rounded" alt="">
             <div class="detials rounded p-3"></div>
