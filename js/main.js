@@ -160,16 +160,15 @@ async function display_items(targetcat) {
 
 
 
-
-
-
 // ----------------------------------------regex   
 
 function validtext(inputtar,regex) {
     if(regex.test(inputtar.value)){
         $(inputtar).next().addClass("hideee")
+        $(".mybtn").removeClass("disabled")
     }else{
         $(inputtar).next().removeClass("hideee");
+        $(".mybtn").addClass("disabled")
     }
 }
 $(".allinputs input").keyup(function(e) { 
@@ -186,10 +185,6 @@ const pattern= {
 }
 
 // // ----------------------------------------end regex   
-
-
-
-
 
 
 // other
@@ -280,6 +275,8 @@ async function bookdisplay() {
             <div class="detials rounded p-1"></div>
             <div class="textditails text-center px-3">
                 <h5>${moviearray[t].original_title}</h5>
+                <div class="deletmovie">
+                <i data-id="${moviearray[t].id}" class="fas fa-calendar-times"></i></div>
                 <p style="font-size: 80%">${moviearray[t].overview}</p>
                 <h4 class="py-1">rate : ${moviearray[t].vote_average}</h4>
                 <h5>${moviearray[t].release_date}</h5>
@@ -288,6 +285,14 @@ async function bookdisplay() {
     </div>`
     }
     $(".bookdisplay").html(hasala)
+    calldelet()
 }
 
 
+function calldelet() {
+    $(".deletmovie i").click((e)=>{
+        let delet =  $(e.target).data("id")
+        Watchlist.splice(Watchlist.indexOf(delet),1)
+        lstfilter()
+    })   
+}

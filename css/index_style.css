@@ -29,9 +29,10 @@ input:focus{
 }
 .hideee{display: none;}
 .mybtn{color:#ffffff;border: 1px solid #43B4D9;}
-.savebtn{font-size: 35px; color: rgb(255, 255, 255);position: absolute;top: 2%;left: 2%;cursor: pointer;}
+.savebtn , .deletmovie {font-size: 35px; color: rgb(255, 255, 255);position: absolute;top: 2%;left: 2%;cursor: pointer;}
 .savebtn:hover{color: #F6CC33;}
-.savebtnafter{font-size: 15px;color: #ffffff;}
+.deletmovie:hover{color: #E33A50;}
+
 
 
 /* /bookmark */
@@ -40,7 +41,7 @@ input:focus{
     width: 70%;height: 100vh;position: fixed;z-index: 555;right: 0;
     background-image: linear-gradient(to left bottom ,#49B1CF , #522FB5);
 }
-.containss{position: absolute;overflow-y: scroll;z-index: 555;  height: 100%;}
+.containss{position: absolute;overflow-y: scroll;z-index: 555;  height: 100%;width: 100%;}
 
 .after{
     cursor: pointer;
