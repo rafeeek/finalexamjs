@@ -246,7 +246,7 @@ function lstfilter(){
 
 // ------------------------------------------------------------------------------------------bookmark
 let bookWidth = $(".book").outerWidth()
-// $(".book").css("right" , -bookWidth+13)
+$(".book").css("right" , -bookWidth+13)
 $(".after").click(()=>{
     let bookright = $(".book").css("right")
     if(bookright <= "0"){
