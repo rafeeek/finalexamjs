@@ -231,13 +231,7 @@ function fav(){
     })
 }
 function lstfilter(){
-    let filteritems = Watchlist.reduce(function(values,items){
-        if(!values.includes(items)){
-            values.push(items)
-        }
-        return values
-    },[])
-    localStorage.setItem("favmovie" , JSON.stringify(filteritems))
+    localStorage.setItem("favmovie" , JSON.stringify(Array.from(new Set(Watchlist))))
     first()
 }
 
