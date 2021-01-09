@@ -215,6 +215,7 @@ first()
 function first() {
     if (localStorage.getItem("favmovie") == null){
         globalThis.Watchlist = []
+        bookdisplay()
     }else{
         globalThis.Watchlist = JSON.parse(localStorage.getItem("favmovie"))
         bookdisplay()
@@ -245,7 +246,7 @@ function lstfilter(){
 
 // ------------------------------------------------------------------------------------------bookmark
 let bookWidth = $(".book").outerWidth()
-$(".book").css("right" , -bookWidth+13)
+// $(".book").css("right" , -bookWidth+13)
 $(".after").click(()=>{
     let bookright = $(".book").css("right")
     if(bookright <= "0"){
@@ -296,3 +297,7 @@ function calldelet() {
         lstfilter()
     })   
 }
+$(".clearlocal").click(()=>{
+    localStorage.clear()
+    first()
+})
